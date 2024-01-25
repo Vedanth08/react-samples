@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Header(props) {
+export default function Header({title}) {
 
   return (
     <div>
@@ -9,7 +9,7 @@ export default function Header(props) {
         <div className ="container-fluid">
 
           <a className="navbar-brand" href="#">
-            {props.title}
+            {title}
           </a>
 
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
